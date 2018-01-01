@@ -10,7 +10,7 @@ FileUtils.touch "100_days_of_code_log.md"
 File.open("100_days_of_code_log.md", 'w') do |file|
   number = 1
   date = Date.today
-  until day == 101
+  until number == 101
   file.write(
 "### Log #{number}: #{date}
 
@@ -18,7 +18,9 @@ File.open("100_days_of_code_log.md", 'w') do |file|
 
 **Thoughts**:
 
-**Link to work:** [Example App](http://www.example.com)")
+**Link to work:** [Example App](http://www.example.com)
+
+")
   number += 1
   date += 1
   end
